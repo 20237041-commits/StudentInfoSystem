@@ -15,7 +15,7 @@ type Student = {
   status: 'enrolled' | 'inactive'
 }
 
-const BASE_URL = 'https://finalsproject-production-94b5.up.railway.app'
+const BASE_URL = 'studentinfosystem-production.up.railway.app'
 
 function App() {
   const [students, setStudents] = useState<Student[]>([])
