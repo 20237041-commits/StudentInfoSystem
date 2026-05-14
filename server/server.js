@@ -3,7 +3,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+}))
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://20237041_db_user:admin1234@cluster0.vmfoxeo.mongodb.net/Final_Project?retryWrites=true&w=majority&appName=Cluster0")
