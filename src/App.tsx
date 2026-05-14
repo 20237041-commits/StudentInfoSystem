@@ -116,7 +116,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/StudentInfoSystem">
       <Navbar />
       <main>
         {loading && (
