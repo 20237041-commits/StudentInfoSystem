@@ -11,7 +11,7 @@ mongoose.connect("mongodb+srv://20237041_db_user:admin1234@cluster0.vmfoxeo.mong
     .catch(console.error);
 
 // ─── Student Schema ────────────────────────────────────────────────────────────
-// Defines the structure of student documents in MongoDB, including validation rules and default values.
+
 const studentSchema = new mongoose.Schema({
     fullName: { type: String, required: true },
     course: { type: String, required: true },
